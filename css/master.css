@@ -1,45 +1,321 @@
-html, body {
-  background: url(/images/cover.jpeg) no-repeat center center fixed;
-  background-size: cover;
-}
-
 body {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-family: 'DM Sans', sans-serif;
-  color: #333;
+   font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
+
+.sms-pricing-form {
+	padding: 60px 40px;
+	background: #fff;
+	align-items: center;
+   position: relative;
+   margin: 50px auto 0 auto;
+   max-width: 780px;
+   border: 1px solid #ededed;
+   border-radius: 20px;
+   box-shadow: 0 40px 60px 0 rgba(134, 82, 179, 0.1);
 }
 
-.btn {
-  font-weight: 700;
-  border-radius: 50px;
-  text-transform: uppercase;
+
+
+.sms-pricing-form__header {
+	display: block;
+	width: auto;
+	text-align: center;
+	max-width: 550px;
+	margin: 0 auto;
+	margin-bottom: 37px;
 }
 
-.btn-primary {
-  background-color: tomato;
-  border-color: tomato;
+.sms-pricing-form__title {
+   font-size: 28px;
+   line-height: 29px;
+   font-weight: 700;
+	color: #1a1b1f;
+	margin-bottom: 21px;
 }
 
-.btn-primary:hover {
-  background-color: red;
-  border-color: red;
+.sms-pricing-form__subtitle {
+   margin-top: 5px;
+   font-size: 16px;
+   line-height: 24px;
+   color: #585858;
 }
 
-.btn-xl {
-  padding: 1rem 2rem;
+
+
+
+
+.sms-pricing-form .sms-pricing-form-inner {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: 714px;
+	margin: 0 auto;
 }
 
-hr {
-  border-color: tomato;
-  border-width: 3px;
-  max-width: 65px;
+
+.sms-pricing-form label {
+   font-size: 15px;
+   font-weight: 700;
+   padding-left: 20px;
+   padding-right: 20px;
+   width: 60px;
+   color: #1a1b1f;
 }
 
-.buffer {
-  height: 5rem;
+
+.c-tooltip-wrap   {
+   position: relative;
+   display: inline-block;
+   line-height: 1.2em;
+   border-bottom: 1px dotted #3978F8;
+   margin-bottom: 10px;
 }
+
+.c-tooltip-wrap .c-tooltip {
+   visibility: hidden;
+   width: 220px;
+   background-color: #333;
+   color: #fff;
+   font-size: 13px;
+   text-align: center;
+   border-radius: 1px;
+   padding: 5px 5px;
+
+   position: absolute;
+   z-index: 1;
+   bottom: 100%;
+   left: 50%;
+   margin: 10px 50px 10px -111px;
+}
+
+.c-tooltip:before {
+   width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #ffeeee transparent transparent transparent;
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    margin-left: -8px;
+    bottom: -8px;
+    content: '';
+}
+
+.c-tooltip-wrap:hover .c-tooltip {
+   visibility: visible;
+ } 
+
+/* 
+ .btn--primary {
+   display: inline-block;
+   height: 40px;
+   line-height: 38px;
+   font-weight: 700;
+   padding: 0 15px;
+   font-size: 13px;
+   text-transform: uppercase;
+   color: #fff;
+   border: 1px solid #3ba33d;
+   border-radius: 50px;
+   margin: 0;
+   cursor: pointer;
+   outline: none;
+   min-width: 130px;
+   text-align: center;
+   background: #3ba33d;
+   text-decoration: none;
+   -webkit-transition: all 300ms ease-in-out;
+ } */
+
+
+
+
+
+
+
+
+
+
+
+.sms-pricing-form input[type=number] {
+   background-color: #fff;
+   height: 38px;
+   margin: 0;
+   padding: 0 16px;
+   outline: none;
+   -webkit-appearance: none;
+   border: 1px solid #ddd;
+   font-size: 16px;
+   transition: all 150ms ease-in-out;
+   max-width: 100px;
+   font-family: inherit;
+}
+
+
+
+.sms-total__price {
+	text-align: center;
+}
+
+.sms-price-totals {
+	width: 161px;
+   text-align: center;
+   padding-left: 40px;
+   line-height: 1;
+   padding-bottom: 26px;
+}
+
+.sms-price-totals__title {
+   font-size: 14px;
+   padding-bottom: 5px;;
+}
+
+.sms-price-normal {
+   font-size: 28px;
+   font-weight: 600;
+   line-height: 32px;
+   color: #3978F8;
+}
+
+
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+   color: #1a1b1f !important;
+   font-size: 16px !important;
+   line-height: 38px !important;
+}
+
+
+.select2-container--default .select2-selection--single {
+   height: 40px !important;
+   border: 1px solid #ddd !important;
+   border-radius: 1px !important;
+   font-size: 16px !important;
+}
+
+.select2-dropdown {
+   border: 1px solid #ddd !important;
+   font-size: 15px;
+}
+
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+   height: 38px !important;
+}
+ 
+.select2-container *:focus{
+   outline:0px;
+}
+
+.select2-search{
+   margin-top: 10px;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+   font-family: inherit;
+   border: 1px solid #ddd !important;
+}
+
+.select2-search--dropdown .select2-search__field {
+   padding: 10px !important;
+   margin-bottom: 12px !important;
+}
+
+.select2-results .select2-highlighted {
+   background: #3978F8;
+   color: #fff;
+   border-radius: 0px;
+}
+
+.select2-container--open .select2-dropdown--below,
+.select2-container--open .select2-dropdown--above{
+   background: #fff;
+}
+
+.select2-results__option {
+   padding: 10px 8px !important;
+}
+
+@media (max-width: 817px) {
+   .sms-pricing-form {
+      padding: 43px 50px;
+      background: #fff;
+      display: block;
+      align-items: center;
+      position: relative;
+  }
+
+  .sms-pricing-form__title {
+     font-size: 24px;
+  }
+
+  .sms-pricing-form__subtitle {
+     font-size: 16px;
+  }
+
+  .sms-pricing-form .sms-pricing-form-inner {
+     display: block;
+  }
+
+  .input-wrap {
+     text-align: center;
+     display: block;
+     width: 100%;
+  }
+
+  .sms-pricing-form input[type=number] {
+   display: block !important;
+   margin: auto !important;
+   width: 94% !important;
+   max-width: 92%;
+  }
+
+  .sms-pricing-form label {
+    display: block; 
+    text-align: center;
+    width: auto;
+    padding: 15px 0;
+  }
+
+  .select2-container {
+     display: block !important;
+      margin: auto !important;
+      width: 100% !important;
+      padding-bottom: 30px;
+  }
+
+  .sms-price-totals {
+     width: auto;
+     padding-left: 0;
+  }
+
+}
+
+  @media (max-width: 560px) {
+      .sms-pricing-form__title {
+         margin-bottom: 10px;
+         font-size: 22px;
+      }
+   
+      .sms-pricing-form__subtitle {
+         font-size: 14px;
+      }
+      
+      .sms-pricing-form input[type=number] {
+         display: block !important;
+         margin: auto !important;
+         width: 90% !important;
+         /* max-width: 92%; */
+      }
+   }
+
+   @media (max-width: 360px) {
+      .sms-pricing-form input[type=number] {
+         display: block !important;
+         margin: auto !important;
+         width: 85% !important;
+         /* max-width: 92%; */
+      }
+   }
