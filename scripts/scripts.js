@@ -1,3 +1,61 @@
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+$(document).ready(function () {
+
+    $(document).ready(function() {
+        $('.js-example-basic-single').select2();
+     });
+
+    function calculateSMSPrice () {
+ 
+        var smsCount = parseInt($('#sms-count').val(), 10) || 0;
+        var $selectedCountry = $( "#sms-country option:selected" );
+        var $selectedPlan = $( "#sms-plan option:selected" );
+        var $resulLocation = $('.js-sms-price'); // shows pricing
+        var singleSMSPrice = 0;
+ 
+        // if user can select different plans
+ 
+        if ($('.select-sms-plan').length > 0) {
+            singleSMSPrice = parseFloat($selectedCountry.data($selectedPlan.data('plan')));
+        } else {
+            singleSMSPrice = parseFloat($selectedCountry.data('standart'));
+        }
+ 
+ 
+        var finalPriceRounded = (smsCount * singleSMSPrice).toFixed(3)
+ 
+        if(finalPriceRounded > 99999) {
+            $('.sms-price-normal').show();
+            // $('.sms-price-big').show();
+        } else {
+            $('.sms-price-normal').show();
+            $('.sms-price-big').hide();
+            $resulLocation.html(finalPriceRounded);
+        }
+ 
+        $('.js-plan-name').html($selectedPlan.val());
+ 
+    }
+ 
+    calculateSMSPrice ();
+ 
+    $("#sms-country, #sms-plan, #sms-count").on('change keyup', function () {
+        calculateSMSPrice ();
+ 
+        $('#sms-count').next().hide();
+ 
+    });
+ 
+ });
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+ 
+ 
