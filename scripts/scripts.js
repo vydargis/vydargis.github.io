@@ -1,15 +1,13 @@
 $(document).ready(function () {
 
-    $(document).ready(function() {
-        $('.js-example-basic-single').select2();
-     });
+    $('.js-example-basic-single').select2();
 
     function calculateSMSPrice () {
  
         var smsCount = parseInt($('#sms-count').val(), 10) || 0;
         var $selectedCountry = $( "#sms-country option:selected" );
         var $selectedPlan = $( "#sms-plan option:selected" );
-        var $resulLocation = $('.js-sms-price'); // shows pricing
+        var $resulLocation = $('.js-sms-price');
         var singleSMSPrice = 0;
  
         // if user can select different plans
@@ -19,22 +17,15 @@ $(document).ready(function () {
         } else {
             singleSMSPrice = parseFloat($selectedCountry.data('standart'));
         }
- 
- 
-        var finalPriceRounded = (smsCount * singleSMSPrice).toFixed(3)
- 
-        if(finalPriceRounded > 99999) {
-            $('.sms-price-normal').show();
-            // $('.sms-price-big').show();
-        } else {
-            $('.sms-price-normal').show();
-            $('.sms-price-big').hide();
-            $resulLocation.html(finalPriceRounded);
-        }
- 
+
+        var finalPriceRounded = (smsCount * singleSMSPrice).toFixed(3);
+    
+        $resulLocation.html(finalPriceRounded);        
+       
         $('.js-plan-name').html($selectedPlan.val());
  
     }
+    
  
     calculateSMSPrice ();
  
