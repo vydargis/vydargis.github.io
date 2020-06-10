@@ -140,13 +140,14 @@ body {
 
 
 .sms-pricing-form input[type=number] {
-   background-color: #fff;
+   background-color: #EBF1FE;
    height: 38px;
    margin: 0;
    padding: 0 16px;
    outline: none;
    -webkit-appearance: none;
    border: 1px solid #ddd;
+   border-radius: 3px;
    font-size: 16px;
    transition: all 150ms ease-in-out;
    max-width: 100px;
@@ -176,7 +177,7 @@ body {
    font-size: 28px;
    font-weight: 600;
    line-height: 32px;
-   color: #3978F8;
+   color: #1a1b1f;
 }
 
 
@@ -187,12 +188,18 @@ body {
    line-height: 38px !important;
 }
 
+.select2-container--default .select2-results__option--selected {
+   background-color: #EBF1FE !important;
+   color: #1a1b1f !important;
+}
+
 
 .select2-container--default .select2-selection--single {
    height: 40px !important;
    border: 1px solid #ddd !important;
    border-radius: 1px !important;
    font-size: 16px !important;
+   border-radius: 4px !important;
 }
 
 .select2-dropdown {
