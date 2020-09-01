@@ -18,59 +18,143 @@
    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 </head>
 <body>
-   <!-- Google Tag Manager (noscript) -->
-   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRRGPCF"
-   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-   <!-- End Google Tag Manager (noscript) -->
-   
-   <form class="sms-pricing-form" id="sms">
-      <div class="sms-pricing-form__header">
-          <div class="sms-pricing-form__title">SMS Pricing</div>
-          <div class="sms-pricing-form__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque molestiae, maxime porro, velit quo quia deserunt.</div>
-      </div>
-      <div class="sms-pricing-form-inner">
-        <div class="input-wrap">
-            <input type="number" id="sms-count" value="1" min="0" oninput="validity.valid||(value='');">
-        </div>
-
-        <label>SMS in</label>
-
-            <select id="sms-country" class="select2 select2-container select2-container--default js-example-basic-single" dir="ltr" style="width: 300px;">
-                <span class="selection">
-                <option data-standart="0.0129" >United States (US)</option>
-                <option data-standart="0.0671">France (FR)</option>
-                <option data-standart="0.0716">Spain (ES)</option>
-                </span>
-        </select>
   
-        
+<section class='calc-container'>
+    <section class='calc-slider__container'>
+      <section class='badge-mob__container' lang="en">
+        <p class='badge-mob__title' lang="en">14 jours</p>
+        <p class="badge-mob__subtitle" lang="en">d'essai gratuit</p>
+      </section>
+      <section class='slider-title__container'>
+        <h3 class='slider-title'>Combien de contacts avez-vous ?</h3>
+      </section>
+      <section id='slider'></section>
+    </section>
+    <section class='cal-pricing__container' lang="en">
+      <section class='badge-container' lang="en">
+        <p class='badge-title' lang="en">14 jours</p>
+        <p class="badge-subtitle" lang="en">d'essai gratuit</p>
+      </section>
+      <section class='pricing-container'>
+          <section id="price"></section>
+          <section id="metric-one" class='pricing-details slider-range-value'>
+            <img src="https://uploads-ssl.webflow.com/5d8196d3d8051958ee193a87/5d95c0a9cfbd8266cda74e6f_c.svg" class='pricing-details__checked' alt="Number of contacts">
+            <section id="slider-range-value"></section>
+          </section>
+          <section id="metric-two" class='pricing-details emails'>
+            <img src="https://uploads-ssl.webflow.com/5d8196d3d8051958ee193a87/5d95c0a9cfbd8266cda74e6f_c.svg" class='pricing-details__checked' alt="Number of emails">
+            <section id="emails"></section>
+          </section>
+          <section id="metric-three" class='pricing-details price'>
+            <img src="https://uploads-ssl.webflow.com/5d8196d3d8051958ee193a87/5d95c0a9cfbd8266cda74e6f_c.svg" class='pricing-details__checked' alt="Support level based on number of contacts">
+            <section id="support"></section>
+          </section>
+          <section id="cal-btn">
+            <a href="https://app.carts.guru/signup" class="calc-btn__start">Essayer gratuitement</a>
+          </section>
+          <section id="btnFormOpen">
+            <a href="#" class="calc-btn__contact" id='hubBtn'>Contactez-nous</a>
+          </section>
+      </section>
+    </section>
+  </section>
 
-        <div class="sms-price-totals h-tac">
-            <div class="c-tooltip-wrap sms-price-totals__title">
-                Estimated price
-                <div class="c-tooltip">
-                    <p>Estimated price for your SMS sending volumes</p>
-                </div>
-            </div>
-            <div class="sms-total__price">
-                <div class="sms-price-normal">
-                    $<span class="js-sms-price">0.015</span>
-                </div>
-                <!-- <div class="sms-price-big" style="display: none;">
-                    <a href="#" class="btn--primary">Contact us</a>
-                </div> -->
-            </div>
-        </div>
-         
-         <a href="#">Test</a>
-
-
-          
+  <form class="sms-pricing-form" id="sms">
+    <div class="sms-pricing-form__header">
+        <div class="sms-pricing-form__title">Tarifs SMS</div>
+        <div class="sms-pricing-form__subtitle">Estimez vos dépenses mensuelles en SMS, puis pré-payez vos crédits SMS. Le prix des SMS varie en fonction du pays du destinataire.</div>
+    </div>
+    <div class="sms-pricing-form-inner">
+      <div class="input-wrap">
+          <input type="number" id="sms-count" value="1" min="0" oninput="validity.valid||(value='');">
       </div>
-  </form>
 
+      <label>SMS en</label>
 
+          <select id="sms-country" class="select2 select2-container select2-container--default js-example-basic-single" dir="ltr" style="width: 300px;">
+              <span class="selection">
+                  <option data-standart="0.0597">France</option>
+                  <option data-standart="0.0112">États-Unis</option>
+                  <option data-standart="0.0849">Belgique</option>
+                  <option data-standart="0.0112">Canada</option>
+                  <option data-standart="0.0339">Grande-Bretagne</option>
+                  <option data-standart="0.0819">Hollande</option>
+                  <option data-standart="0.0634">Allemagne</option>
+                  <option data-standart="0.0637">Espagne</option>
+                  <option data-standart="0.0666">Italie</option>
+                  <option data-standart="0.0491">Brésil</option>
+                  <option data-standart="0.043">Suède</option>
+                  <option data-standart="0.0469">Norvège</option>
+                  <option data-standart="0.0657">Finlande</option>
+                  <option data-standart="0.0555">Suisse</option>
+                  <option data-standart="0.0515">Slovaquie</option>
+                  <option data-standart="0.0351">Mexique</option>
+                  <option data-standart="0.0181">Danemark</option>
+                  <option data-standart="0.0309">Pologne</option>
+                  <option data-standart="0.0458">Chili</option>
+                  <option data-standart="0.0295">Russie</option>
+                  <option data-standart="0.0062">Inde</option>
+                  <option data-standart="0.0428">Portugal</option>
+                  <option data-standart="0.0103">Israël</option>
+                  <option data-standart="0.0715">Irlande</option>
+                  <option data-standart="0.0157">Afrique du Sud</option>
+                  <option data-standart="0.0525">Colombie</option>
+                  <option data-standart="0.0191">Turquie</option>
+                  <option data-standart="0.0212">Slovénie</option>
+                  <option data-standart="0.0213">Islande</option>
+                  <option data-standart="0.0291">Chine</option>
+                  <option data-standart="0.0303">Singapour</option>
+                <!--  <option data-standart="0.0303">Malaisie</option> -->
+                  <option data-standart="0.0319">Pérou</option>
+                  <option data-standart="0.0369">République Tchèque</option>
+                  <option data-standart="0.0372">Bolivie</option>
+                  <option data-standart="0.0416">Moldavie</option>
+                  <option data-standart="0.0459">Grèce</option>
+                  <option data-standart="0.0475">Australie</option>
+                  <option data-standart="0.0536">Argentine</option>
+                  <option data-standart="0.0632">Autriche</option>
+                  <option data-standart="0.0701">Japon</option>
+                  <option data-standart="0.0777">Ukraine</option>
+                  <option data-standart="0.0794">Nouvelle-Zélande</option>
+                  <option data-standart="0.0112">Luxembourg</option>
+                  <option data-standart="0.0159">Géorgie</option>
+                  <option data-standart="0.019">Serbie</option>
+                  <option data-standart="0.0208">Pakistan</option>
+                  <option data-standart="0.022">Emirats arabes unis</option>
+                  <option data-standart="0.0233">Arabie Saoudite</option>
+                  <option data-standart="0.0264">Macao</option>
+                  <option data-standart="0.0312">Philippines</option>
+                  <option data-standart="0.032">Iran</option>
+                  <option data-standart="0.0346">Hong Kong</option>
+                  <option data-standart="0.0403">Jamaïque</option>
+                  <option data-standart="0.0439">Venezuela</option>
+                  <option data-standart="0.0521">Macédoine</option>
+                  <option data-standart="0.0576">Tunisie</option>
+                  <option data-standart="0.0585">Roumanie</option>
+                  <option data-standart="0.0615">Uruguay</option>
+                  <option data-standart="0.0629">Maroc</option>
+                  <option data-standart="0.0634">Bulgarie</option>
+              </span>
+      </select>
 
+      <div class="sms-price-totals h-tac">
+          <div class="c-tooltip-wrap sms-price-totals__title">
+              Prix estimé
+              <div class="c-tooltip">
+                  <p>Estimez le prix en fonction du volume de SMS envoyés</p>
+              </div>
+          </div>
+          <div class="sms-total__price">
+              <div class="sms-price-normal">
+                  <span class="js-sms-price"></span> €
+              </div>
+              <div class="sms-price-big" style="display: none;">
+                  <a href="https://app.carts.guru/signup" class="btn--primary">Commencer maintenant</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</form>
 
 
   <script src="scripts/scripts.js"></script>
