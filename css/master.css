@@ -1,328 +1,332 @@
-body {
-   font-family: 'Montserrat', sans-serif;
+
+.badge-subtitle {
+font-size: 13px;
+}
+.badge-title {
+	font-size: 17px;
 }
 
+@media (max-width: 576px) {
+	.badge-mob__title, .badge-mob__subtitle {
+  	font-size: 10px;
+  }
+}
 
 .sms-pricing-form {
-	padding: 60px 40px;
-	background: #fff;
-	align-items: center;
-   position: relative;
-   margin: 50px auto 0 auto;
-   max-width: 780px;
-   border: 1px solid #ededed;
-   border-radius: 20px;
-   box-shadow: 0 40px 60px 0 rgba(134, 82, 179, 0.1);
+padding: 60px 40px;
+background: #fff;
+align-items: center;
+position: relative;
+margin: 50px auto 0 auto;
+max-width: 980px;
+border: 1px solid #ededed;
+border-radius: 20px;
+box-shadow: 0 40px 60px 0 rgba(134, 82, 179, 0.1);
 }
 
-
-
 .sms-pricing-form__header {
-	display: block;
-	width: auto;
-	text-align: center;
-	max-width: 550px;
-	margin: 0 auto;
-	margin-bottom: 37px;
+display: block;
+width: auto;
+text-align: center;
+max-width: 680px;
+margin: 0 auto;
+margin-bottom: 37px;
 }
 
 .sms-pricing-form__title {
-   font-size: 28px;
-   line-height: 29px;
-   font-weight: 700;
-	color: #1a1b1f;
-	margin-bottom: 21px;
+font-size: 28px;
+line-height: 29px;
+font-weight: 700;
+color: #1a1b1f;
+margin-bottom: 21px;
 }
 
 .sms-pricing-form__subtitle {
-   margin-top: 5px;
-   font-size: 16px;
-   line-height: 24px;
-   color: #585858;
+margin-top: 5px;
+font-size: 16px;
+line-height: 24px;
+color: #585858;
 }
 
-
-
-
-
 .sms-pricing-form .sms-pricing-form-inner {
-	display: flex;
-	align-items: center;
-	position: relative;
-	max-width: 714px;
-	margin: 0 auto;
+display: flex;
+align-items: center;
+position: relative;
+max-width: 714px;
+margin: 0 auto;
 }
 
 
 .sms-pricing-form label {
-   font-size: 15px;
-   font-weight: 700;
-   padding-left: 20px;
-   padding-right: 20px;
-   width: 60px;
-   color: #1a1b1f;
+font-size: 13px;
+font-weight: 700;
+padding: 0 20px;
+width: 94px;
+text-transform: initial;
+color: #1a1b1f;
+margin-bottom: 0;
 }
 
 
 .c-tooltip-wrap   {
-   position: relative;
-   display: inline-block;
-   line-height: 1.2em;
-   border-bottom: 1px dotted #3978F8;
-   margin-bottom: 10px;
+position: relative;
+display: inline-block;
+line-height: 1.2em;
+border-bottom: 1px dotted #3978F8;
+margin-bottom: 10px;
 }
 
 .c-tooltip-wrap .c-tooltip {
-   visibility: hidden;
-   width: 220px;
-   background-color: #333;
-   color: #fff;
-   font-size: 13px;
-   text-align: center;
-   border-radius: 1px;
-   padding: 5px 5px;
+visibility: hidden;
+width: 220px;
+background-color: #333;
+color: #fff;
+font-size: 13px;
+text-align: center;
+border-radius: 1px;
+padding: 5px 5px;
 
-   position: absolute;
-   z-index: 1;
-   bottom: 100%;
-   left: 50%;
-   margin: 10px 50px 10px -111px;
+position: absolute;
+z-index: 1;
+bottom: 100%;
+left: 50%;
+margin: 10px 50px 10px -111px;
 }
 
 .c-tooltip:before {
-   width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 8px 8px 0 8px;
-    border-color: #ffeeee transparent transparent transparent;
-    position: absolute;
-    display: inline-block;
-    left: 50%;
-    margin-left: -8px;
-    bottom: -8px;
-    content: '';
+width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 8px 8px 0 8px;
+   border-color: #ffeeee transparent transparent transparent;
+   position: absolute;
+   display: inline-block;
+   left: 50%;
+   margin-left: -8px;
+   bottom: -8px;
+   content: '';
 }
 
 .c-tooltip-wrap:hover .c-tooltip {
-   visibility: visible;
- } 
-
-/* 
- .btn--primary {
-   display: inline-block;
-   height: 40px;
-   line-height: 38px;
-   font-weight: 700;
-   padding: 0 15px;
-   font-size: 13px;
-   text-transform: uppercase;
-   color: #fff;
-   border: 1px solid #3ba33d;
-   border-radius: 50px;
-   margin: 0;
-   cursor: pointer;
-   outline: none;
-   min-width: 130px;
-   text-align: center;
-   background: #3ba33d;
-   text-decoration: none;
-   -webkit-transition: all 300ms ease-in-out;
- } */
+visibility: visible;
+} 
 
 
-
-
-
-
-
-
-
-
-
-.sms-pricing-form input[type=number] {
-   background-color: #EBF1FE;
-   height: 38px;
-   margin: 0;
-   padding: 0 16px;
-   outline: none;
-   -webkit-appearance: none;
-   border: 1px solid #ddd;
-   border-radius: 3px;
-   font-size: 16px;
-   transition: all 150ms ease-in-out;
-   max-width: 100px;
-   font-family: inherit;
+.btn--primary {
+display: inline-block;
+height: 40px;
+line-height: 38px;
+font-weight: 700;
+padding: 0 15px;
+font-size: 13px;
+text-transform: uppercase;
+color: #fff;
+border: 1px solid #3ba33d;
+border-radius: 50px;
+margin: 0;
+cursor: pointer;
+outline: none;
+min-width: 130px;
+text-align: center;
+background: #3ba33d;
+text-decoration: none;
+-webkit-transition: all 300ms ease-in-out;
 }
 
+.btn--primary:hover {
+   color: #fff;
+}
 
+.sms-pricing-form input[type=number] {
+background-color: #EBF1FE;
+height: 38px;
+margin: 0;
+padding: 0 16px;
+outline: none;
+-webkit-appearance: none;
+border: 1px solid #ddd;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 700;
+color: #3977f8;
+transition: all 150ms ease-in-out;
+max-width: 130px;
+font-family: inherit;
+}
 
 .sms-total__price {
-	text-align: center;
+text-align: center;
 }
 
 .sms-price-totals {
-	width: 161px;
-   text-align: center;
-   padding-left: 40px;
-   line-height: 1;
-   padding-bottom: 26px;
+width: 177px;
+text-align: center;
+padding-left: 40px;
+line-height: 1;
+padding-bottom: 26px;
 }
 
 .sms-price-totals__title {
-   font-size: 14px;
-   padding-bottom: 5px;;
+font-size: 14px;
+padding-bottom: 5px;;
 }
 
 .sms-price-normal {
-   font-size: 28px;
-   font-weight: 600;
-   line-height: 32px;
-   color: #1a1b1f;
+font-size: 28px;
+font-weight: 700;
+line-height: 32px;
+color: #1a1b1f;
 }
-
-
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-   color: #1a1b1f !important;
-   font-size: 16px !important;
-   line-height: 38px !important;
+color: #1a1b1f !important;
+font-size: 16px !important;
+line-height: 38px !important;
 }
 
+.select2-container .select2-selection--single .select2-selection__rendered {
+   padding-left: 16px !important;
+}
+ 
 .select2-container--default .select2-results__option--selected {
-   background-color: #EBF1FE !important;
-   color: #1a1b1f !important;
+background-color: #EBF1FE !important;
+color: #1a1b1f !important;
 }
-
 
 .select2-container--default .select2-selection--single {
-   height: 40px !important;
-   border: 1px solid #ddd !important;
-   border-radius: 1px !important;
-   font-size: 16px !important;
-   border-radius: 4px !important;
+height: 40px !important;
+border: 1px solid #ddd !important;
+border-radius: 1px !important;
+font-size: 16px !important;
+border-radius: 4px !important;
 }
 
 .select2-dropdown {
-   border: 1px solid #ddd !important;
-   font-size: 15px;
+border: 1px solid #ddd !important;
+font-size: 15px;
 }
 
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-   height: 38px !important;
+height: 38px !important;
 }
- 
+
 .select2-container *:focus{
-   outline:0px;
+outline:0px;
 }
 
 .select2-search{
-   margin-top: 10px;
+margin-top: 10px;
 }
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
-   font-family: inherit;
-   border: 1px solid #ddd !important;
+font-family: inherit;
+border: 1px solid #ddd !important;
 }
 
 .select2-search--dropdown .select2-search__field {
-   padding: 10px !important;
-   margin-bottom: 12px !important;
+padding: 10px !important;
+margin-bottom: 12px !important;
 }
 
 .select2-results .select2-highlighted {
-   background: #3978F8;
-   color: #fff;
-   border-radius: 0px;
+background: #3978F8;
+color: #fff;
+border-radius: 0px;
 }
 
 .select2-container--open .select2-dropdown--below,
 .select2-container--open .select2-dropdown--above{
-   background: #fff;
+background: #fff;
 }
 
 .select2-results__option {
-   padding: 10px 8px !important;
+padding: 10px 16px !important;
+}
+
+@media (max-width: 1050px) {
+.sms-pricing-form {
+   max-width: 800px;
+}
 }
 
 @media (max-width: 817px) {
-   .sms-pricing-form {
-      padding: 43px 50px;
-      background: #fff;
-      display: block;
-      align-items: center;
-      position: relative;
-  }
+.sms-pricing-form {
+   padding: 43px 50px;
+   background: #fff;
+   display: block;
+   align-items: center;
+   position: relative;
+}
 
-  .sms-pricing-form__title {
-     font-size: 24px;
-  }
+.sms-pricing-form__title {
+   font-size: 24px;
+}
 
-  .sms-pricing-form__subtitle {
-     font-size: 16px;
-  }
+.sms-pricing-form__subtitle {
+   font-size: 16px;
+}
 
-  .sms-pricing-form .sms-pricing-form-inner {
-     display: block;
-  }
+.sms-pricing-form .sms-pricing-form-inner {
+   display: block;
+}
 
-  .input-wrap {
-     text-align: center;
-     display: block;
-     width: 100%;
-  }
+.input-wrap {
+   text-align: center;
+   display: block;
+   width: 100%;
+}
 
-  .sms-pricing-form input[type=number] {
+.sms-pricing-form input[type=number] {
+display: block !important;
+margin: auto !important;
+width: 100% !important;
+max-width: 100%;
+}
+
+.sms-pricing-form label {
+   display: block; 
+   text-align: center;
+   width: auto;
+   padding: 15px 0;
+}
+
+.select2-container {
    display: block !important;
    margin: auto !important;
-   width: 94% !important;
-   max-width: 92%;
-  }
+   width: 100% !important;
+   padding-bottom: 30px;
+}
 
-  .sms-pricing-form label {
-    display: block; 
-    text-align: center;
-    width: auto;
-    padding: 15px 0;
-  }
-
-  .select2-container {
-     display: block !important;
-      margin: auto !important;
-      width: 100% !important;
-      padding-bottom: 30px;
-  }
-
-  .sms-price-totals {
-     width: auto;
-     padding-left: 0;
-  }
+.sms-price-totals {
+   width: auto;
+   padding-left: 0;
+}
 
 }
 
-  @media (max-width: 560px) {
-      .sms-pricing-form__title {
-         margin-bottom: 10px;
-         font-size: 22px;
-      }
-   
-      .sms-pricing-form__subtitle {
-         font-size: 14px;
-      }
-      
-      .sms-pricing-form input[type=number] {
-         display: block !important;
-         margin: auto !important;
-         width: 90% !important;
-         /* max-width: 92%; */
-      }
+@media (max-width: 560px) {
+   .sms-pricing-form__title {
+      margin-bottom: 10px;
+      font-size: 22px;
    }
 
-   @media (max-width: 360px) {
-      .sms-pricing-form input[type=number] {
-         display: block !important;
-         margin: auto !important;
-         width: 85% !important;
-         /* max-width: 92%; */
-      }
+   .sms-pricing-form__subtitle {
+      font-size: 14px;
    }
+   
+   .sms-pricing-form input[type=number] {
+      display: block !important;
+      margin: auto !important;
+      width: 100% !important;
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 360px) {
+   .sms-pricing-form input[type=number] {
+      display: block !important;
+      margin: auto !important;
+      width: 100% !important;
+   }
+}
